@@ -20,23 +20,26 @@
         <div class="carousel-inner">
             <div class="carousel-item active mt-2">
 
-                <div class="row">
+                <div class="row px-2">
 
-                    <div class="d-md-block h-100 text-center">
-                        <h1>Look at that cool Puzzle</h1>
+                    <div  class="d-md-block h-100 text-center">
+                        <h1 class="content_heading">Look at that cool Puzzle</h1>
                     </div>
-                    <div class="col-5">
-                        <img src="/img/puzzle.png" style="height:100%; width:100%; object-fit: contain;">
+                    <div class="col-4">
+                        <img src="/puzzle.png" style="height:100%; width:100%; object-fit: contain;">
                     </div>
-                    <div class="col-7 d-flex align-items-center">
+                    <div id="" class="col-8 d-flex align-items-center content_text">
                         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                         </p>
                     </div>
                 </div>
             </div>
 
+        </div>
     </div>
-</div>
+
+
+
 
     <div class="pt-4">
         <h5>Anpassungen:</h5>
@@ -59,12 +62,7 @@
 
 
 <style>
-p {
-    color: black;
-}
-h5 {
-    color: black;
-}
+
 #carouselExampleCaptions {
     border: solid;
     border-color: black;
@@ -72,6 +70,12 @@ h5 {
 .carousel-control-prev-icon, .carousel-control-next-icon {
     filter: invert(100%);
 }
-
+.content_text {
+    font-size: 1.5rem;
+}
+.content_heading {
+    font-size: 3rem;
+    color: #294466;
+}
 
 </style>
