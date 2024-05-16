@@ -8,70 +8,81 @@
   </head>
   <body>
 
-<div class="container px-3 py-4">
+    <div class="container px-3 py-4">
 
     
-    <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        </div>
-        <div class="carousel-inner">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
 
-            <div class="carousel-item active">
-                <div class="row">
-                    <div class="col-3">
-                        <img src="https://picsum.photos/seed/200/300">
-                        <!-- for rezising stubborn pictures use style="height:100%; width:100%; object-fit: contain;" -->
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="https://picsum.photos/seed/1/200/300" class="img-responsive" style="height:100%; width:100%;">
+                        </div>
+                        <div class="col-9 align-self-center">
+                            <h1 class="content_heading">Look at that cool Picture</h1>
+                            <p class="content_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                            </p>
+                        </div>
                     </div>
-                    <div class="col-9 align-self-center">
-                        <h1 class="content_heading">Look at that cool Picture</h1>
-                        <p class="content_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        </p>
+                </div>
+
+                <div class="carousel-item">
+
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="https://picsum.photos/seed/2/200/300" class="img-responsive">
+                        </div>
+                        <div class="col-9 align-self-center">
+                            <h1 class="content_heading">Look at that other cool Picture</h1>
+                            <p class="content_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="carousel-item">
-
-                <div class="row">
-                    <div class="col-3">
-                        <img src="https://picsum.photos/seed/200/300">
-                        <!-- for rezising stubborn pictures use style="height:100%; width:100%; object-fit: contain;" -->
-                    </div>
-                    <div class="col-9 align-self-center">
-                        <h1 class="content_heading">Look at that other cool Picture</h1>
-                        <p class="content_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-        
     </div>
-</div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
 </body>
 </html>
 
 
 <style>
+    
+    img {
+        border-radius: 5px;
+    }
 
-.content_text {
-    font-size: 1.5rem;
-}
+    .carousel-control-prev {
+        background: linear-gradient(90deg, rgb(100,100,100) 0%, rgba(0,0,0,0) 100%);
+        border-radius: 5px;
+    }
+    .carousel-control-next {
+        background: linear-gradient(270deg, rgb(100,100,100) 0%, rgba(0,0,0,0) 100%);
+        border-radius: 5px;
+    }
+
+    .content_text {
+        font-size: 1.5rem;
+    }
 
 
 </style>
